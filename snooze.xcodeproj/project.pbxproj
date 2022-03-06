@@ -12,6 +12,9 @@
 		C45B2D5B27D415DA00C589BF /* snoozeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C45B2D3327D415D900C589BF /* snoozeApp.swift */; };
 		C45B2D5D27D415DA00C589BF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C45B2D3427D415D900C589BF /* ContentView.swift */; };
 		C45B2D5F27D415DA00C589BF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C45B2D3527D415DA00C589BF /* Assets.xcassets */; };
+		C45B2D7427D4215100C589BF /* NetworkingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C45B2D7327D4215100C589BF /* NetworkingManager.swift */; };
+		C45B2D7727D4319000C589BF /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = C45B2D7627D4319000C589BF /* Router.swift */; };
+		C45B2D7927D4370A00C589BF /* TopHeadlinesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C45B2D7827D4370A00C589BF /* TopHeadlinesModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +37,9 @@
 		C45B2D4D27D415DA00C589BF /* Tests_iOSLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_iOSLaunchTests.swift; sourceTree = "<group>"; };
 		C45B2D7027D4190600C589BF /* Secrets.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Secrets.xcconfig; sourceTree = "<group>"; };
 		C45B2D7127D41A4500C589BF /* snooze--iOS--Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "snooze--iOS--Info.plist"; sourceTree = "<group>"; };
+		C45B2D7327D4215100C589BF /* NetworkingManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingManager.swift; sourceTree = "<group>"; };
+		C45B2D7627D4319000C589BF /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		C45B2D7827D4370A00C589BF /* TopHeadlinesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopHeadlinesModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +63,9 @@
 		C45B2D2D27D415D900C589BF = {
 			isa = PBXGroup;
 			children = (
+				C45B2D7827D4370A00C589BF /* TopHeadlinesModel.swift */,
+				C45B2D7127D41A4500C589BF /* snooze--iOS--Info.plist */,
+				C45B2D7527D42AEE00C589BF /* Networking */,
 				C45B2D7227D41DF000C589BF /* Configuration */,
 				C45B2D6F27D418BA00C589BF /* Resources */,
 				C45B2D3327D415D900C589BF /* snoozeApp.swift */,
@@ -103,10 +112,18 @@
 		C45B2D7227D41DF000C589BF /* Configuration */ = {
 			isa = PBXGroup;
 			children = (
-				C45B2D7127D41A4500C589BF /* snooze--iOS--Info.plist */,
 				C45B2D7027D4190600C589BF /* Secrets.xcconfig */,
 			);
 			path = Configuration;
+			sourceTree = "<group>";
+		};
+		C45B2D7527D42AEE00C589BF /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				C45B2D7327D4215100C589BF /* NetworkingManager.swift */,
+				C45B2D7627D4319000C589BF /* Router.swift */,
+			);
+			path = Networking;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -208,8 +225,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C45B2D7427D4215100C589BF /* NetworkingManager.swift in Sources */,
+				C45B2D7727D4319000C589BF /* Router.swift in Sources */,
 				C45B2D5D27D415DA00C589BF /* ContentView.swift in Sources */,
 				C45B2D5B27D415DA00C589BF /* snoozeApp.swift in Sources */,
+				C45B2D7927D4370A00C589BF /* TopHeadlinesModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
